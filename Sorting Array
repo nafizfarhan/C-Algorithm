@@ -1,0 +1,29 @@
+void sortAscend(std::vector <int> arr) {
+    // Complete this function
+    unsigned int temp;
+    
+    for(int i=0;i<arr.size();i++){
+        for(int j=0;j<(arr.size()-1);j++){
+            if(arr[j]>arr[j+1]){
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }        
+    
+    for(int i=0;i<arr.size();i++){
+         std::cout<<"List of numbers "<<arr[i]<<"\n";   
+    }       
+}
+
+int main()
+{ 
+    std::vector<int> arr(5);
+    for(int arr_i = 0; arr_i < 5; arr_i++){
+       std::cin >> arr[arr_i];
+    }
+    std::cout<<"\n";
+    sortAscend(arr);
+    return 0;
+}
