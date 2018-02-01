@@ -1,0 +1,5 @@
+!anyNonZeroValue=0
+!!anyNonZeroValue=1
+!! this symbol could be use to convert any non zero value to 1, for example 
+int a =49
+!!a=1
