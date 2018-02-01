@@ -1,0 +1,6 @@
+if(m==n)
+  c++;
+  
+could be write as 
+
+c+= m==n;
